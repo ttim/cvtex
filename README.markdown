@@ -1,0 +1,2 @@
+This is just my personal CV using XeTeX template made by [Dario Taraborelli](http://nitens.org/taraborelli/cvtex). See also original README file.
+By the way, I use free font [Gentium Basic](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=Gentium_basic).

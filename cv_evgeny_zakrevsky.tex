@@ -1,0 +1,129 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparwidth=.7in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common}, BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Gentium Basic Italic}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\footnotesize #1}}
+\newcommand{\mnote}[1]{\years{\normalsize #1}}
+\renewcommand*{\raggedleftmarginnote}{\raggedleft}
+\setlength{\marginparsep}{10pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+% PDF SETUP
+\usepackage[ bookmarks, colorlinks, breaklinks
+           , pdftitle={Evgeny Zakrevsky CV}
+           , pdfauthor={Evgeny Zakrevsky}
+           ]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+
+{\LARGE Evgeny Zakrevsky}\\[1em]
+
+\years{\normalsize Address:} Nevsky prosp. 126-76\\
+ Saint Petersburg, 191036, Russia \\[.2cm]
+\years{\normalsize Born:}  December 14, 1989 — Siverskii, USSR\\[.2cm]
+\years{\normalsize Phone:} \texttt{+7 (909) 587-87-11}\\[.2cm]
+\years{\normalsize Email:} \href{mailto:zakrevsky.evgeny@gmail.com}{zakrevsky.evgeny@gmail.com}\\[.4cm]
+\years{\normalsize Skype:} zakrevsky.evgeny\\[.4cm]
+% \vfill
+
+%%%%%%%%%%%%%%%%%%%%
+\section*{Education}
+
+\years{2007–2012}Saint Petersburg State University, Faculty of Mathematics and Mechanics, Specialist degree in Applied Mathematics. \\
+Diploma thesis: ``Limit cycles in Lienard system'';\\
+\years{2005–2007}Academic Gymnasium at Saint Petersburg State University; \\
+\years{1997–2005}Tosno's school n.1 with improved study of particular subjects, Tosno, Leningrad Region.\\[.4cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Additional education}
+
+\years{2009–2010}Practice at Motorola corp. (2 semesters) — Developed programs for testing (Java, Eclipse, JUnit, XML, Swing); \\
+\years{2009–2010}Special course of business programming by Exigen Services company (2 semesters) — JavaEE lessons; \\
+\years{2007–2008}Participation in the programming contests (2 semesters) at Saint Petersburg State University; \\
+\years{2000–2005}Attended introductory programming courses (5 years).\\[.4cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Awards \& achievements}
+%\subsection*{In the discipline of Mathematics}
+
+\years{2008}Participation in the 1/4 ACM ICPC;\\
+\years{2002}First prize at regional tour of the International Mathematical Kangaroo Olympiad;\\
+\years{2005}First prize at first tour of the Russian Mathematical Olympiad.\\[.4cm]
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Work experience}
+
+\years{2011–2012}JetBrains. IntelliJ IDEA team. User interface design; task management and time tracking plugins (Java, Swing, REST API, Git);\\
+\years{2010–2010}SmartKupon. Developed back-office for a mobile marketing system from scratch (Java, JavaEE, Spring-IoC, Tomcat, MySQL, HTML, CSS, Apache Ant, Subversion).\\[.4cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Side projects}
+
+\years{2011}CodePad. Test task at JetBrains. Objective C code editor for iPad with large files support (Objective C, XCode).\\[.4cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Computer skills}
+
+\subsection*{Proficient user of}
+Mac OS X, Windows operating systems; Maple computer algebra system; IntelliJ IDEA IDE.
+
+\subsection*{Programming experience (in descending order)}
+Java, Objective C.
+
+%%%%%%%%%%%%%%%%%%%%
+%\section*{Languages}
+
+%{\it Russian:} native speaker;\\
+%{\it English:} IELTS band score 7.0 (June 2012).
+
+\vfill{}
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+\fontspec{Times New Roman}\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+%Source: \href{https://github.com/zakrevsky/cvtex}{https://github.com/zakrevsky/cvtex}
+}
+\end{center}
+
+\end{document}

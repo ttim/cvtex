@@ -3,8 +3,8 @@
 % Typesetting your academic CV in LaTeX
 %
 % URL: http://nitens.org/taraborelli/cvtex
-% DISCLAIMER: This template is provided for free and without any guarantee 
-% that it will correctly compile on your system if you have a non-standard  
+% DISCLAIMER: This template is provided for free and without any guarantee
+% that it will correctly compile on your system if you have a non-standard
 % configuration.
 % Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
 %------------------------------------
@@ -13,10 +13,10 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[11pt, a4paper]{article}
-\usepackage{fontspec} 
+\usepackage{fontspec}
 
 % DOCUMENT LAYOUT
-\usepackage{geometry} 
+\usepackage{geometry}
 \geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparwidth=.9in}
 \setlength\parindent{0in}
 
@@ -25,7 +25,7 @@
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \setromanfont [Ligatures={Common}, BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
-\setmonofont[Scale=0.8]{Monaco} 
+\setmonofont[Scale=0.8]{Monaco}
 % ---- CUSTOM AMPERSAND
 %\newcommand{\amper}{{\fontspec[Scale=.95]{Gentium Basic Italic}\selectfont\itshape\&}}
 % ---- MARGIN YEARS
@@ -37,18 +37,18 @@
 \reversemarginpar
 
 % HEADINGS
-\usepackage{sectsty} 
-\usepackage[normalem]{ulem} 
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
 \sectionfont{\rmfamily\mdseries\upshape\Large}
-\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
-\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize}
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize}
 
 % PDF SETUP
 \usepackage[ bookmarks, colorlinks, breaklinks
            , pdftitle={Timur Abishev CV}
            , pdfauthor={Timur Abishev}
-           ]{hyperref}  
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+           ]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}
 
 % DOCUMENT
 \begin{document}
@@ -57,10 +57,10 @@
 
 \years{\normalsize Nationality:} Kazakhstan\\[.2cm]
 \years{\normalsize Languages:} russian (native), english (intermediate)\\[.2cm]
-\years{\normalsize Address:} 21 Vasilyevsky Island 4-th line\\
+\years{\normalsize Address:} 45 Vasilyevsky Island 4-th line\\
  Saint Petersburg, 199004, Russia \\[.2cm]
 \years{\normalsize Born:}  November 14, 1989 — Temirtau, Kazakhstan\\[.2cm]
-\years{\normalsize Phone:} \texttt{+7 (921) 898-27-66}\\[.2cm]
+\years{\normalsize Phone:} \mobile{+7 (921) 898-27-66}\\[.2cm]
 \years{\normalsize Email:} \href{mailto:abishev.timur@gmail.com}{abishev.timur@gmail.com}\\[.2cm]
 \years{\normalsize LinkedIn:} \href{http://www.linkedin.com/pub/timur-abishev/13/6b1/b99}{Timur Abishev}\\[.2cm]
 \years{\normalsize TopCoder:} \href{http://community.topcoder.com/tc?module=MemberProfile&cr=22655228}{TokarR}\\[.2cm]
@@ -79,7 +79,8 @@ Temirtau, Kazakhstan. \\[.2cm]
 \section*{Awards \& achievements}
 %\subsection*{In the discipline of Mathematics}
 
-\years{2009-2011} Participating in Google Code Jam. Advanced to third round thrice;\\
+\years{2012-2015} Participating in Facebook Hacker Cup. Advanced to third round;\\
+\years{2009-2013} Participating in Google Code Jam. Advanced to third round thrice;\\
 \years{2005-2007}Two bronze and one silver medal in International Olympiad in Informatics;\\
 \years{2007}Participating in onsite of TopCoder High School Tournament;\\
 \years{2008}Participating in Round 3 of TopCoder Open Tournament;\\
@@ -89,8 +90,11 @@ Temirtau, Kazakhstan. \\[.2cm]
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Work experience}
-\years{2011–present}MPS/Java Software Developer at \href{http://jetbrains.com}{JetBrains}, Saint-Peterburg, Russia, \\ 
-Role: Develop of \href{http://www.jetbrains.com/mps/}{MPS}, \\
+\years{2013–2014}Java Software Developer at \href{http://jetbrains.com}{JetBrains}, Saint-Peterburg, Russia, \\
+Role: Develop of undisclosed GWT/HTML5 application, \\
+Technologies: GWT, java, javascript, operational transformation; \\
+\years{2011–2013}MPS/Java Software Developer at \href{http://jetbrains.com}{JetBrains}, Saint-Peterburg, Russia, \\
+Role: Develop of \href{http://www.jetbrains.com/mps/}{MPS}, tool for design domain specific languages; I've developed mainly core subsystems: classloading, behaviours, constraints,\\
 Technologies: MPS, git, java, swing; \\
 \years{2011, \\September - December}intern at \href{https://imo.im/about}{imo.im}, Palo Alto, USA, \\
 Role: Recommendation logic for meet new people service feature, \\
@@ -109,13 +113,13 @@ Android client for \href{http://comapping.com}{Comapping} mind-map edit online s
 Technologies: Java, SVN, Eclipse, Android SDK, \\
 My part: client-server communication; \\
 \years{2011, May}\href{https://github.com/ttim/rcompletion}{RCompletion}, \\
-Trying to improve autocompletion for Groovy in Intellij IDEA based on runtime evaluation of application code, \\
+Autocompletion for Groovy code in Intellij IDEA based on runtime evaluation of application code, \\
 Technologies: Groovy, IDEA plugins development; \\
 \years{2010, May}\href{https://github.com/ttim/WebOnCont}{WebOnCont}, \\
 Proof-of-concept web framework on F\# based on monads (Workflows in F\#) and continuations (using continuation passing style), \\
 Technologies: F\#, monads (workflows); \\
 \years{2009, \\ October - December}\href{https://github.com/ttim/twilike}{Twilike}, \\
-Service for reviewing movies from twitter by tweets with some syntax, e.g. \\ 
+Service for reviewing movies from twitter by tweets with some syntax, e.g. \\
 ``The Shawshank Redemption. (your comment). \#twilike+;'' \\
 Technologies: Ruby On Rails, Google App Engine (as movies picture hosting), Heroku.com (as cloud hosting).\\[.2cm]
 
@@ -152,7 +156,7 @@ food, travel. \\
 \vfill{}
 
 \begin{center}
-{\scriptsize  Last updated: \today\- •\- 
+{\scriptsize  Last updated: \today\- •\-
 % ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
 Typeset in \href{http://nitens.org/taraborelli/cvtex}{
 \fontspec{Times New Roman}\XeTeX }\\
